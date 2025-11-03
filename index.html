@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        /* CSS yang Diperbaiki */
+        html {
+            /* Penting: Memastikan html setinggi viewport */
+            height: 100%;
+        }
+        body {
+            /* Penting: Memastikan body setinggi viewport */
+            height: 100%;
+            background-color: #f8f9fa;
+            /* Gunakan display: flex dan flex-direction: column untuk menempatkan footer */
+            display: flex;
+            flex-direction: column;
+            margin: 0; 
+        }
+        /* Bagian ini akan mengambil semua ruang vertikal yang tersisa */
+        .content-wrap {
+            flex: 1 0 auto; 
+            padding-top: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 700px; 
+        }
+        /* Styling untuk Footer */
+        .footer {
+            /* Footer akan menempel di bawah karena body adalah flex container */
+            flex-shrink: 0; 
+            background-color: #343a40; 
+            color: white;
+            padding: 15px 0; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrap">
+        <div class="container">
+            <h2 class="mb-4">Formulir Pendaftaran</h2>
+            <form action="" method="POST">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="nama">Nama :</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan Alamat Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" class="form-control" id="password" placeholder="Buat Password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jk">Jenis Kelamin:</label>
+                        <select class="form-control" id="jk" name="jk">
+                            <option>Pria</option>
+                            <option>Wanita</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Pendaftaran</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid"> <span class="text-white">NAMA : JAVIER ANDRIES DIEN | NIM: 230211060034</span>
+        </div>
+    </footer>
+    </body>
+</html>
